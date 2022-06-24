@@ -7,6 +7,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ![image](https://user-images.githubusercontent.com/48445926/175474854-827cf7f0-f5eb-467c-aa9c-50bf77b8b686.png)
 
+# Demo
+[Demo](https://sbijlwan0.github.io/TicTacToe/)
+
 ## Development server
 
 Run `npm i` to install node-modules first.
@@ -31,3 +34,14 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## To Deploy in github
+
+Install this package globally
+`npm i -g angular-cli-ghpages`
+
+Then build your project using this command
+`ng build --prod --base-href "https://<username>.github.io/<project-name>/"`
+
+Then deploy in github using this command
+`ngh --dir dist/<project-name>`
