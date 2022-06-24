@@ -1,6 +1,6 @@
 # TicTac
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.4. It is a computer vs player version of tic tac toe. Computer is trying to stop you from winning. Test your skill. Can you beat Computer.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.4. It is a computer vs player version of tic tac toe. Computer is trying to stop you from winning. Test your skill. Can you beat Computer?
 
 # Game ScreenShots
 ![image](https://user-images.githubusercontent.com/48445926/175474806-132db242-1a9f-412f-895b-c6fbc57f2077.png)
@@ -9,6 +9,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
+Run `npm i` to install node-modules first.
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
