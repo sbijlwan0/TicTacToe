@@ -1,0 +1,54 @@
+.box {
+  width: 100%;
+  height: 15vh;
+  background-color: white;
+  transition: 1s;
+}
+
+.bigFont {
+  font-size: calc(18px + 2vmax);
+  font-family: "meaCulp";
+}
+
+.animate {
+  animation: grow infinite 1s;
+}
+
+.boxLabel {
+  font-size: 8vh;
+  font-weight: 700;
+  text-shadow: 4px 2px black;
+}
+
+.btn:disabled {
+  opacity: 1;
+}
+
+.boxDiv {
+}
+
+.boxdiv:hover {
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+.X {
+  /* background-color: #0d6efd !important; */
+  background-image: linear-gradient(56deg, #0d6efd, transparent) !important;
+}
+
+.O {
+  /* background-color: #198754 !important; */
+  background-image: linear-gradient(56deg, #198754, transparent) !important;
+}
+
+@keyframes grow {
+  0% {
+    font-size: calc(18px + 2vmax);
+  }
+  50% {
+    font-size: calc(18px + 2.5vmax);
+  }
+  100% {
+    font-size: calc(18px + 2vmax);
+  }
+}
