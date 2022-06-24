@@ -10,6 +10,12 @@
   font-family: "meaCulp";
 }
 
+.normalFont {
+  font-size: calc(15px + 1vmin);
+  font-family: cursive;
+  font-style: italic;
+}
+
 .animate {
   animation: grow infinite 1s;
 }

@@ -6,12 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./game.component.css'],
 })
 export class GameComponent implements OnInit {
-  userChoice = 'X'; // default choice for user symbol
-  squares = Array(9).fill(null); //setting null values to squares by default
-  canPlay = true; //variable to disable all player clicks until computer plays
-  chance = 0; //count to maintain how many chances are played in total
+  userChoice = 'X';                                                             // default choice for user symbol
+  squares = Array(9).fill(null);                                                //setting null values to squares by default
+  canPlay = true;                                                               //variable to disable all player clicks until computer plays
+  chance = 0;                                                                   //count to maintain how many chances are played in total
   winConditions = [
-    // all possible conditions of win
+                                                                                // all possible conditions of win
     [0, 1, 2],
     [2, 5, 8],
     [8, 7, 6],
@@ -21,19 +21,21 @@ export class GameComponent implements OnInit {
     [1, 4, 7],
     [3, 4, 5],
   ];
-  winner = ''; // winner name
-  draw = false; //Variable to toggle draw and win result
+  winner = '';                                                                  // winner name
+  draw = false;                                                                 //Variable to toggle draw and win result
 
   constructor() {}
 
   ngOnInit(): void {}
 
   //function triggers when user changes its choice.
+
   userChoiceChange(e) {
     this.userChoice = e.target.checked ? 'X' : 'O';
   }
 
   //function triggers every time user clicks a box.
+
   userPlay(index: number) {
     if (this.canPlay) {
       //checks if user can play or not.
@@ -55,6 +57,7 @@ export class GameComponent implements OnInit {
   }
 
   // function to call win check and the computer play
+
   async checkWinNmove(index: number) {
     let win = await this.someOneWin();
     if (!win) {
@@ -69,6 +72,7 @@ export class GameComponent implements OnInit {
   }
 
   //function to check if someone won
+
   someOneWin() {
     return new Promise((resolve, reject) => {
       for (let i = 0; i < this.winConditions.length; i++) {
@@ -94,8 +98,9 @@ export class GameComponent implements OnInit {
   }
 
   //function to decide computer's move
+
   computerPlay(userMove: number) {
-    let arr = this.winConditions.filter((a, i) => a.includes(userMove)); // getting all winning scenarios in which user's move can make him win
+    let arr = this.winConditions.filter((a, i) => a.includes(userMove));                          // getting all winning scenarios in which user's move can make him win
     const choice = new Set();
     for (let i = 0; i < arr.length; i++) {
       // getting all distinct box number's possible for his next move.
@@ -169,6 +174,7 @@ export class GameComponent implements OnInit {
   }
 
   //function to reset game
+
   resetGame() {
     this.squares = Array(9).fill(null);
     this.canPlay = true;
