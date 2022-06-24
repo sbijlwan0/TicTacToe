@@ -1,6 +1,11 @@
 # TicTac
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.4.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.4. It is a computer vs player version of tic tac toe. Computer is trying to stop you from winning. Test your skill. Can you beat Computer.
+
+# Game ScreenShots
+![image](https://user-images.githubusercontent.com/48445926/175474806-132db242-1a9f-412f-895b-c6fbc57f2077.png)
+
+![image](https://user-images.githubusercontent.com/48445926/175474854-827cf7f0-f5eb-467c-aa9c-50bf77b8b686.png)
 
 ## Development server
 
